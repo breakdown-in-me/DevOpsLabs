@@ -15,50 +15,44 @@
 
 ### 2. Проверка работы nginx через localhost
 
-![Проверка nginx](media/image1.png)
+![Проверка nginx](https://github.com/breakdown-in-me/DevOpsLabs/blob/main/Lab1/images/nginx.png)
 
 ### 3. Открыл html файл веб-страницу с регистрацией на localhost
 
-![Веб-страница с регистрацией](media/image2.png)
+![Веб-страница с регистрацией](https://github.com/breakdown-in-me/DevOpsLabs/blob/main/Lab1/images/localhost%20site.png)
 
-![Форма регистрации](media/image3.png)
 
 ### 4. Создание сертификатов безопасности
 
 Далее я создавал сертификаты безопасности через openssl, однако при запуске в браузере вылезала ошибка о том, что «Подключение не защищено» и сайт нам не доверяет. Для решения проблемы я решил создать сертификат через mkcert и это сработало.
 
-![Создание сертификата](media/image4.png)
-
-![Работа с mkcert](media/image5.png)
+![Создание сертификата](https://github.com/breakdown-in-me/DevOpsLabs/blob/main/Lab1/images/ssl.png)
 
 ### 5. Добавление доменов
 
 Далее я добавил в файл hosts 2 новых домена
 
-![Добавление доменов в hosts](media/image6.png)
+![Добавление доменов в hosts](https://github.com/breakdown-in-me/DevOpsLabs/blob/main/Lab1/images/new%20hosts.png)
 
 ### 6. Настройка перенаправления HTTP → HTTPS
 
 В конфиге настроил принудительный переброс с http-протокола на https для первого сайта и аналогично поступил и со вторым
 
-![Конфигурация Nginx](media/image7.png)
+![Конфигурация Nginx](https://github.com/breakdown-in-me/DevOpsLabs/blob/main/Lab1/images/http%20to%20https.png)
 
 ### 7. Тестирование работы сайтов
 
 На этом этапе самое время, чтобы протестировать работу сайтов. В итоге, всё отлично работает, оба сайта открываются
 
-![Тестирование сайтов](media/image8.png)
+![Тестирование сайтов](https://github.com/breakdown-in-me/DevOpsLabs/blob/main/Lab1/images/two%20sites.png)
 
 ### 8. Настройка alias для путей
 
 Теперь создаем в проекте папку images и настраиваем путь к ней в конфиге с помощью alias. Так при нажатии на кнопки, открываются изображения.
 
-![Настройка alias](media/image9.png)
-
-![Работа с изображениями](media/image10.png)
-
-![Проверка alias](media/image9.png)
+![Настройка alias](https://github.com/breakdown-in-me/DevOpsLabs/blob/main/Lab1/images/alias.png)
 
 ## Вывод
+
 
 Успешно настроены два HTTPS-сайта с перенаправлением HTTP→HTTPS, виртуальными хостами и псевдонимами путей.
