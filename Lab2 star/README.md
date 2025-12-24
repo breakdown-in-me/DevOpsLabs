@@ -110,6 +110,7 @@ volumes:
 ## 4. Запуск
 Плохой Docker Compose
 ![1](./compose_code_bad.jpg)
+
 Хороший Docker Compose
 ![2](./compose_code_good.jpg)
 
@@ -166,8 +167,11 @@ volumes:
   postgres_data:
     driver: local
 ```
+
 ###Запуск изолированного docker compose
+
 ![3](./isolated_docker_compose.jpg) 
 
 # Вывод
+
 Были показаны файлы с хорошими и плохими практиками при работе c Docker compose. А исправление ошибок помогло сделать работу сервисов безопаснее, обеспечить постоянную воспроизводимость сборки, а архитектуру чище и изолированнее.
