@@ -131,7 +131,7 @@ deploy-production:
         -H "Content-Type: application/json" \
         -d "{\"image\": \"$CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA\"}"
 ```
-
+##Анализ "плохого" и "хорошего" файлов
 ## Использование статического тега latest для Docker образов
 
 **Проблема** Тег latest не обеспечивает впоспроизводимость и при смени версий используемых инструментов программа может сломаться
@@ -203,7 +203,8 @@ deploy_to_production:
 ```
 
 
-##Деплой
+Деплой
 ![Deploy](deploy.png)
+
 
 
