@@ -1,4 +1,4 @@
-# Отчёт по установке и настройке Auditor и AppSec Portal
+# Отчёт по Лабораторной работе №3 *
 
 ## 1. Установка Auditor
 Клонируем репозиторий: `git clone https://gitlab.inview.team/whitespots-public-fork/auditor.git`  
@@ -54,4 +54,5 @@ Auditor готов к работе:
 ## Итог
 
 Auditor и AppSec Portal установлены, связаны, настроены для анализа репозиториев и интеграции с VS Code.Был проведен поиск и выявлен ряд уязвимостей репозитория.
+
 
