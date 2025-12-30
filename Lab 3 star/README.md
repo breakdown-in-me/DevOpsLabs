@@ -20,7 +20,7 @@ Auditor готов к работе:
 Создаём админа, который будет нашим логином: `docker compose exec back python3 manage.py createsuperuser --username admin`  
 Открываем в браузере фдрес `http://127.0.0.1:80`, вставляем наш ключ ииии... Всё работает!
 
-![AppSec Portal запущен](appsec_running.jpg)
+![AppSec Portal запущен](appsec_runnning.jpg)
 
 
 
@@ -37,7 +37,7 @@ Auditor готов к работе:
 
 ![Добавление репозитория](results_given.png) 
 
-##Аудит pet-проекта 
+Аудит pet-проекта 
 
 ![Аудит проекта](results_pet.png)
 
@@ -54,3 +54,4 @@ Auditor готов к работе:
 ## Итог
 
 Auditor и AppSec Portal установлены, связаны, настроены для анализа репозиториев и интеграции с VS Code.Был проведен поиск и выявлен ряд уязвимостей репозитория.
+
